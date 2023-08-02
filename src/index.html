@@ -1,15 +1,75 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-600">
-  <h1 class="text-xs text-gray-300">Hello world!</h1>
-  <h1 class="text-sm text-slate-500">Hello world!</h1>
-  <h1 class="text-base">Hello world!</h1>
-  <h1 class="text-lg">Hello world!</h1>
-  <h1 class="text-xl font-bold">Hello world!</h1>
+    <div class="p-4 max-w-2xl h-screen m-auto bg-blue-600 bg-opacity-20">
+        <h1 class="text-xs text-gray-300">Hello world!</h1>
+        <h1 class="text-sm text-slate-500">Hello world!</h1>
+        <h1 class="text-base">Hello world!</h1>
+        <h1 class="text-lg">Hello world!</h1>
+        <h1 class="text-xl font-bold tracking-wider">Hello world!</h1>
+        <p class="text-left w-1/2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus explicabo nobis animi
+            nisi,
+            nesciunt quisquam ea nemo aut perferendis eligendi recusandae porro! Molestias unde saepe reiciendis nulla
+            officia, voluptatum similique?</p>
+
+        <!-- SPACING -> padding -->
+        <div class="p-4 m-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illo, eos tempore esse et mollitia,
+            delectus atque veniam incidunt laudantium quam tenetur ut unde molestiae veritatis nulla aliquam eligendi
+            eaque?
+        </div>
+        <!-- SPACE BETWEEN -->
+        <div class="m-4 space-x-4">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+        <!-- BORDERS & BACKGROUND GRADIENT -->
+        <div class="p-2 mb-4 border-l-2 border-gray-300 bg-gradient-to-bl from-gray-600 via-gray-300 to-gray-100">Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit.
+            Obcaecati voluptatem libero, quo minima minus unde. Ad veritatis ratione vel quidem, rem cum dolorum laborum
+            impedit dolores eligendi doloribus ipsa exercitationem?</div>
+
+        <!-- border radius -->
+        <div
+            class="p-2 border border-gray-300 rounded-md border-opacity-25 bg-gradient-to-r from-cyan-500 to-blue-500 bg-opacity-10">
+            Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Obcaecati voluptatem libero, quo minima minus unde. Ad veritatis ratione vel quidem, rem
+            cum dolorum laborum impedit dolores eligendi doloribus ipsa exercitationem?</div>
+        <button class="bg-blue-400 px-4 rounded text-white ring-1 ring-red-500">Save</button>
+
+        <!-- FLEXBOX -->
+        <div class="flex justify-center items-center space-x-4 bg-red-400 h-40">
+            <div class="bg-teal-700 w-24 h-24 p-4 text-white text-center">
+                01
+            </div>
+            <div class="bg-teal-700 w-24 h-24 p-4 text-white text-center">
+                02
+            </div>
+            <div class="bg-teal-700 w-24 h-24 p-4 text-white text-center">
+                03
+            </div>
+        </div>
+        <br>
+        <div class="flex justify-center items-center space-x-4 bg-red-400 h-40">
+            <div class="bg-teal-700 w-24 h-24 p-4 text-white text-center">
+                01
+            </div>
+            <div class="bg-teal-700 flex-grow flex-shrink-0 w-24 h-24 p-4 text-white text-center">
+                02
+            </div>
+            <div class="bg-teal-700 w-24 h-24 p-4 text-white text-center">
+                03
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
